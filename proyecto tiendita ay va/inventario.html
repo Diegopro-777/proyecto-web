@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario - Supplemen Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <script src="js/cart.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html" aria-label="Ir a la página de inicio">SUPPLEMEN STORE</a>
+            </div>
+
+            <nav class="main-nav" aria-label="Navegación principal del sitio">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="inventario.html" class="active"><i class="fas fa-box-open"></i> Inventario</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="carrito.html" class="cart-link"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="inventory-main">
+        <div class="inventory-header">
+            <h1>🏋️ Catálogo de Productos</h1>
+            <p>Explora nuestro catálogo completo. Usa los filtros para encontrar rápidamente tus suplementos.</p>
+        </div>
+
+        <section class="controls-container">
+            <div class="search-group">
+                <label for="search">🔎 Buscar Producto:</label>
+                <input type="text" id="search" placeholder="Escribe el nombre, beneficio o categoría...">
+            </div>
+
+            <div class="filter-group">
+                <label for="category-filter">🏷️ Categoría:</label>
+                <select id="category-filter">
+                    <option value="all">Todas las Categorías</option>
+                    <option value="proteina">Proteínas</option>
+                    <option value="aminoacidos">Aminoácidos</option>
+                    <option value="rendimiento">Rendimiento / Pre-Entrenos</option>
+                    <option value="vitaminas">Vitaminas y Salud General</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="product-listing">
+            <h2>Productos Disponibles (<span id="total-count">0</span>)</h2>
+            <div id="product-list" class="product-grid">
+                <p>Cargando suplementos...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="copyright">
+            <p>&copy; 2025 Supplemen Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

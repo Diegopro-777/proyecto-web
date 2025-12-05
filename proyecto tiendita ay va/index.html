@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Supplemen Store</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cart.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html" aria-label="Ir a la página de inicio">SUPPLEMEN STORE</a>
+            </div>
+
+            <nav class="main-nav" aria-label="Navegación principal del sitio">
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="inventario.html"><i class="fas fa-box-open"></i> Inventario</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="carrito.html" class="cart-link"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero" aria-label="Introducción y llamado a la acción principal">
+            <div class="hero-content" style="text-align: center; padding: 50px 0; background-color: white; margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+                <h1 class="hero-title" style="color: var(--primary-color); font-size: 3em;">¡Despierta tu Potencial con **SUPPLEMEN STORE**!</h1>
+                <p class="hero-subtitle" style="font-size: 1.5em; color: var(--secondary-color);">Tu fuente confiable para la mejor nutrición deportiva. **Rojo, Negro y Fuerza**.</p>
+                <a class="btn primary-btn large-btn" href="inventario.html" style="padding: 15px 30px; margin-top: 20px; font-size: 1.2em;">🛒 Explora Nuestros Suplementos Ahora</a>
+            </div>
+        </section>
+
+        <section class="featured-products" style="margin-top: 50px;" aria-label="Productos más populares y categorías clave">
+            <h2 style="text-align: center; color: var(--secondary-color); border-bottom: 2px solid var(--primary-color); display: inline-block; width: 100%; padding-bottom: 10px;">🔥 Productos Destacados</h2>
+            <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <article class="product-card">
+                    <figure>
+
+                    </figure>
+                    <h3>Creatina Monohidrato</h3>
+                    <p class="product-description">Aumenta tu fuerza y potencia muscular. Ideal para entrenamientos de alta intensidad.</p>
+                    <p class="product-price"><strong>$29.99</strong></p>
+                    <button class="btn primary-btn add-to-cart-btn" data-id="14">Añadir al Carrito</button>
+                </article>
+
+                <article class="product-card">
+                    <figure>
+
+                    </figure>
+                    <h3>Proteína Whey Premium</h3>
+                    <p class="product-description">La mejor fuente de proteínas para la recuperación muscular post-entrenamiento.</p>
+                    <p class="product-price"><strong>$49.99</strong></p>
+                    <button class="btn primary-btn add-to-cart-btn" data-id="1">Añadir al Carrito</button>
+                </article>
+
+                <article class="product-card">
+                    <figure>
+
+                    </figure>
+                    <h3>Pre-Entrenamiento Foco Total</h3>
+                    <p class="product-description">Energía y concentración explosiva para llevar tus rutinas al siguiente nivel.</p>
+                    <p class="product-price"><strong>$35.00</strong></p>
+                    <button class="btn primary-btn add-to-cart-btn" data-id="15">Añadir al Carrito</button>
+                </article>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a class="btn primary-btn" href="inventario.html">Ver catálogo completo</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="copyright">
+            <p>&copy; 2025 Supplemen Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

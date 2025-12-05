@@ -1,0 +1,352 @@
+/* --- Variables CSS: Rojo, Blanco y Negro --- */
+
+:root {
+    --primary-color: #dc3545;
+    /* Rojo Fuerte (Para Acentos, Botones, Títulos) */
+    --secondary-color: #343a40;
+    /* Negro/Gris Oscuro (Para Fondos de Header/Footer, Texto Principal) */
+    --light-color: #ffffff;
+    /* Blanco (Para Fondos de Contenido y Tarjetas) */
+    --background-color: #f8f9fa;
+    /* Gris Claro (Para Fondo de Página) */
+    --text-color: #212529;
+    /* Negro (Texto) */
+    --font-stack: 'Arial', sans-serif;
+    --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --border-radius: 6px;
+}
+
+
+/* --- Base y Estructura del Body --- */
+
+body {
+    font-family: var(--font-stack);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+}
+
+
+/* --- Header y Navegación Global (index, inventario, contacto) --- */
+
+.main-header {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: var(--primary-color);
+    /* Logo en Rojo */
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--primary-color);
+    /* Rojo en hover */
+}
+
+
+/* --- Footer Global --- */
+
+footer {
+    background-color: var(--secondary-color);
+    color: #bbb;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 50px;
+}
+
+
+/* --- Botones Genéricos --- */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.primary-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+}
+
+
+/* --- PÁGINA INVENTARIO Y CATÁLOGO --- */
+
+.inventory-main,
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.inventory-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.inventory-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+
+/* Controles de Filtro y Búsqueda */
+
+.controls-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-group,
+.search-group {
+    flex: 1;
+    min-width: 280px;
+}
+
+.filter-group label,
+.search-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+#category-filter,
+#search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+/* Product Grid */
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.category-tag {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card .price strong {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    display: block;
+    margin: 10px 0;
+}
+
+.product-card .benefit {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.add-to-cart-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    margin-top: auto;
+    width: 100%;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #c82333;
+}
+
+
+/* Etiqueta de Imagen Simulado */
+
+.product-card>[class^="[Image"] {
+    display: block;
+    background-color: #e9ecef;
+    color: #6c757d;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+
+/* --- PÁGINA CARRITO ESPECÍFICA --- */
+
+.cart-page-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.cart-page-container h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#cart-items {
+    border-top: 1px solid #dee2e6;
+    padding-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ced4da;
+    font-size: 1.1rem;
+}
+
+.cart-item-price {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.remove-from-cart-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+#total-section {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding-top: 10px;
+    border-top: 2px solid var(--secondary-color);
+}
+
+#total-section button {
+    margin-top: 15px;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+}
+
+#total-section button:hover {
+    background-color: #212529;
+}
+
+.empty-cart-message {
+    text-align: center;
+    color: #6c757d;
+    padding: 50px;
+    font-size: 1.2rem;
+}
+
+
+/* --- PÁGINA DE CONTACTO (Ajuste de estilo) --- */
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.contact-form-container h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form-container button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.contact-form-container button[type="submit"]:hover {
+    background-color: #c82333;
+}

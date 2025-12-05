@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Supplemen Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+    <script src="js/cart.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html" aria-label="Ir a la página de inicio">SUPPLEMEN STORE</a>
+            </div>
+
+            <nav class="main-nav" aria-label="Navegación principal del sitio">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="inventario.html"><i class="fas fa-box-open"></i> Inventario</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="carrito.html" class="active cart-link"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cart-page-container">
+        <h1>🛍️ Tu Carrito de Compras</h1>
+
+        <div id="cart-list">
+        </div>
+
+        <section id="total-section">
+            <p>Total de ítems: <span id="cart-count">0</span></p>
+            <p>Total a Pagar: $<span id="cart-total">0.00</span></p>
+            <button class="btn primary-btn" onclick="cart = []; renderCart();">Vaciar Carrito</button>
+            <button class="btn secondary-btn">Finalizar Compra</button>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="copyright">
+            <p>&copy; 2025 Supplemen Store. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

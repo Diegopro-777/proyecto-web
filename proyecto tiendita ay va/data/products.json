@@ -1,0 +1,202 @@
+[
+  {
+    "id": "p001",
+    "name": "Producto 1",
+    "price": 101,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 11
+  },
+  {
+    "id": "p002",
+    "name": "Producto 2",
+    "price": 102,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 12
+  },
+  {
+    "id": "p003",
+    "name": "Producto 3",
+    "price": 103,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 13
+  },
+  {
+    "id": "p004",
+    "name": "Producto 4",
+    "price": 104,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 14
+  },
+  {
+    "id": "p005",
+    "name": "Producto 5",
+    "price": 105,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 15
+  },
+  {
+    "id": "p006",
+    "name": "Producto 6",
+    "price": 106,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 16
+  },
+  {
+    "id": "p007",
+    "name": "Producto 7",
+    "price": 107,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 17
+  },
+  {
+    "id": "p008",
+    "name": "Producto 8",
+    "price": 108,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 18
+  },
+  {
+    "id": "p009",
+    "name": "Producto 9",
+    "price": 109,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 19
+  },
+  {
+    "id": "p010",
+    "name": "Producto 10",
+    "price": 110,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 20
+  },
+  {
+    "id": "p011",
+    "name": "Producto 11",
+    "price": 111,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 21
+  },
+  {
+    "id": "p012",
+    "name": "Producto 12",
+    "price": 112,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 22
+  },
+  {
+    "id": "p013",
+    "name": "Producto 13",
+    "price": 113,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 23
+  },
+  {
+    "id": "p014",
+    "name": "Producto 14",
+    "price": 114,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 24
+  },
+  {
+    "id": "p015",
+    "name": "Producto 15",
+    "price": 115,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 25
+  },
+  {
+    "id": "p016",
+    "name": "Producto 16",
+    "price": 116,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 26
+  },
+  {
+    "id": "p017",
+    "name": "Producto 17",
+    "price": 117,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 27
+  },
+  {
+    "id": "p018",
+    "name": "Producto 18",
+    "price": 118,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 28
+  },
+  {
+    "id": "p019",
+    "name": "Producto 19",
+    "price": 119,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 29
+  },
+  {
+    "id": "p020",
+    "name": "Producto 20",
+    "price": 120,
+    "description": "Descripci\u00f3n completa del producto.",
+    "features": {
+      "Caracter\u00edstica": "Valor"
+    },
+    "stock": 30
+  }
+]
