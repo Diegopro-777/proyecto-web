@@ -22,44 +22,54 @@
                     <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
                     <li><a href="inventario.html"><i class="fas fa-box-open"></i> Inventario</a></li>
                     <li><a href="contacto.html" class="active"><i class="fas fa-envelope"></i> Contacto</a></li>
-                    <li><a href="carrito.html" class="cart-link"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                    <li><a href="carrito.html" class="cart-link"><i class="fas fa-shopping-cart"></i> Carrito <span id="cart-count">0</span></a></li>
+                    <li><a href="login.html"><i class="fas fa-user-circle"></i> Mi Cuenta</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="contact-form-container">
-        <h1>📞 Contáctanos</h1>
-        <p style="text-align: center; color: #6c757d; margin-bottom: 30px;">¡Estamos deseando escuchar de ti! Por favor, rellena el siguiente formulario.</p>
+    <main class="container">
+        <div class="contact-form-container">
+            <h1>📞 Contáctanos</h1>
+            <p style="text-align: center; color: #6c757d; margin-bottom: 30px;">¡Estamos deseando escuchar de ti! Por favor, rellena el siguiente formulario.</p>
 
-        <form action="procesar_formulario.php" method="POST">
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto (Opcional):</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo del contacto">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje detallado..." rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="btn primary-btn">📬 Enviar Mensaje</button>
+            </form>
+
+            <div class="contact-info" style="margin-top: 40px; border-top: 1px solid #ccc; padding-top: 20px;">
+                <h2 style="font-size: 1.5rem;">Información de Contacto Directa</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Dirección:Blvd. Miguel Tamayo Espinoza de los Monteros, Número 2358, Desarrollo Urbano 3 Ríos, Culiacán de Rosales, Sinaloa, México. </p>
+                <p><i class="fas fa-phone"></i> Teléfono: +52 667 482 7761</p>
+                <p><i class="fas fa-envelope"></i> Email: d.lopez24@info.uas.edu.mx</p>
             </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="ejemplo@dominio.com" required>
-            </div>
-
-            <div class="form-group">
-                <label for="asunto">Asunto (Opcional):</label>
-                <input type="text" id="asunto" name="asunto" placeholder="Motivo del contacto">
-            </div>
-
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje detallado..." rows="6" required></textarea>
-            </div>
-
-            <button type="submit" class="btn primary-btn">📬 Enviar Mensaje</button>
-        </form>
-    </div>
+        </div>
+    </main>
 
     <footer class="main-footer">
         <div class="copyright">
-            <p>&copy; 2025 Supplemen Store. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Supplemen Store. Todos los derechos reservados al grupo 2-2 7w7.</p>
         </div>
     </footer>
 </body>

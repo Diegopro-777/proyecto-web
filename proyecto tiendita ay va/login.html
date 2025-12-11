@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceder / Registrarse - Supplemen Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/products-data.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/login.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html" aria-label="Ir a la página de inicio">SUPPLEMEN STORE</a>
+            </div>
+
+            <nav class="main-nav" aria-label="Navegación principal del sitio">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="inventario.html"><i class="fas fa-box-open"></i> Inventario</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="carrito.html" class="cart-link"><i class="fas fa-shopping-cart"></i> Carrito <span id="cart-count">0</span></a></li>
+                    <li><a href="login.html" class="active"><i class="fas fa-user-circle"></i> Mi Cuenta</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="account-container">
+            <h1>Acceso y Registro</h1>
+
+            <section class="auth-form-section">
+                <h2>Iniciar Sesión</h2>
+                <form id="login-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="login-email">Email:</label>
+                        <input type="email" id="login-email" name="email" placeholder="ejemplo@dominio.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Contraseña:</label>
+                        <input type="password" id="login-password" name="password" placeholder="Tu contraseña" required>
+                    </div>
+
+                    <div id="login-error-message" style="color: var(--primary-color); margin-bottom: 15px;"></div>
+
+                    <button type="submit" class="btn primary-btn">Acceder</button>
+                </form>
+            </section>
+
+            <hr style="margin: 40px 0;">
+
+            <section class="auth-form-section">
+                <h2>Crear una Cuenta</h2>
+                <form id="register-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="register-name">Nombre:</label>
+                        <input type="text" id="register-name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email:</label>
+                        <input type="email" id="register-email" name="email" placeholder="ejemplo@dominio.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Contraseña:</label>
+                        <input type="password" id="register-password" name="password" placeholder="Crea tu contraseña" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar Contraseña:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Repite tu contraseña" required>
+                    </div>
+
+                    <div id="register-error-message" style="color: var(--primary-color); margin-bottom: 15px;"></div>
+
+                    <button type="submit" class="btn primary-btn">Registrarse</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="copyright">
+            <p>&copy; 2025 Supplemen Store. Todos los derechos reservados al grupo 2-2 7w7.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
